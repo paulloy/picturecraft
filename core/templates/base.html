@@ -8,12 +8,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Picturecraft</title>
-        <link rel="stylesheet" href="">
+        <!-- Materialise -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom -->
+        <link rel="stylesheet" href="{% static 'css/base/header.css' %}"
+
     </head>
     <body>
+
+        <header>
+            <a href="{% url 'home' %}"><h1>Digital Imaging</h1></a>            
+        </header>
+
         {% block content %}
         {% endblock %}
         
-        <script src=""></script>
+        <!-- Materialise -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
